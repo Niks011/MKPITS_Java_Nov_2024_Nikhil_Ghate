@@ -1,0 +1,24 @@
+class Main{
+	public static void main(String args[]){
+	Books bs = new Books();
+
+	Patrons pt = new Patrons();
+	pt.setName();
+	pt.setDepartment();
+	pt.setEmail();
+	pt.setrollNumber();
+	pt.setNumber();
+	System.out.println(pt.getName());
+	System.out.println(pt.getDepartment());
+	System.out.println(pt.getbookName());
+	System.out.println(pt.getEmail());
+	System.out.println(pt.getrollNumber());
+	System.out.println(pt.getNumber());
+
+
+	Staff st = new Staff();
+	
+	}
+
+
+}

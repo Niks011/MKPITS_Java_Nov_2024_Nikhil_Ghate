@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+abstract class Calculation
+{
+	abstract int calculate(int num1, int num2);
+}
+
+
+class Addition extends Calculation{
+
+	int calculate(int num1, int num2)
+	{
+	int add = num1 + num2;
+	return add;
+	}
+}
+
+class Substraction extends Calculation{
+
+	int calculate(int num1, int num2)
+	{
+	int sub = num1 + num2;
+	return sub;
+	}
+}
+
+
+class Main{
+
+	public static void main(String args[]){
+	System.out.println("Enter two numbers");
+	Scanner sc = new Scanner(System.in);
+	int num1 = sc.nextInt();
+	int num2 = sc.nextInt();
+
+	System.out.println("1: To calculate Sum");
+	System.out.println("2: To calculate Substraction");
+	System.out.println("3: To calculate Division");
+	System.out.println("4: To calculate Multiplication");
+	int num = sc.nextInt();
+	Calculation c;
+	int n;
+	switch(num){
+		case 1:
+			c = new Add();
+			n = c.Calculate(num1 , num2);
+			System.out.println("Addition is " + n);
+
+			break;
+
+		case 2:
+			c = new Substraction();
+			n = c.calculate(num1 , num2);
+			System.out.println("Substraction is "+ n);
+
+			break;
+
+		default : System.out.println("invalid number");
+
+		}
+	}
+}

@@ -1,0 +1,64 @@
+class calculator
+{
+	int area, length, breath, base, hight, radius, side;
+	void rect(){
+	area = length * breath;
+	System.out.println("Area of Square is "+ area);
+	}
+	
+	void triangle(){
+	area = 1/2* base * hight;
+	System.out.println("Area of Square is "+ area);
+	}
+	
+	void circle(){
+	area = 3.14* radius*radius;
+	System.out.println("Area of Square is "+ area);
+	}
+
+	void square(){
+	area = side*side;
+	System.out.println("Area of Square is "+ area);
+	}
+
+	void logic(int choice){
+	if(choice == 1){
+	System.out.println("Enter the Length and Breath");
+	length = sc.nextInt();
+	breath = sc.nextInt();
+	rect();
+	}
+	if(choice == 2){
+	System.out.println("Enter the Base and Hight");
+	base = sc.nextInt();
+	hight = sc.nextInt();
+	triangle();
+	}
+	if(choice == 3){
+	System.out.println("Enter the Radius");
+	radius= sc.nextInt();
+	circle();
+	}
+	if(choice == 4){
+	System.out.println("Enter the Size");
+	size = sc.nextInt();
+	square();
+
+	}
+	}
+}
+
+class Area{
+	public static void main(String args[]){
+	Calculator cl = new Calculator();
+	Scanner sc = new Scanner();
+	System.out.println("Choose The Option for Calculate");
+	System.out.println("1 : Area of Rectangle");
+	System.out.println("1 : Area of Triangle");
+	System.out.println("1 : Area of Circle");
+	System.out.println("1 : Area of Square");
+	int choice = sc.nextInt();
+	cl.logic(choice);
+	}
+
+}
