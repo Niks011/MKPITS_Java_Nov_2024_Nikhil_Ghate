@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Authentication {
+	
+
+	public void display(String username , String password)
+	{
+	try{
+	if(username.equals("") || password.equals(""))
+	}catch(Exception e){
+	System.out.println("enter Valid details");
+	}
+	System.out.println("Authentication successfull");
+}
+
+class Main{
+	public static void main(String args[]){
+	Authentication auth = new Authentication();
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter the username");
+	String username = sc.nextLine();
+	System.out.println("Enter the password");
+	String password = sc.nextLine();
+
+	auth.display(username, password);
+
+}

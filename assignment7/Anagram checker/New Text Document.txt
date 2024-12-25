@@ -1,0 +1,23 @@
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "Hello";
+    char[] myArray = myStr.toCharArray();
+    Arrays.sort(myArray);
+
+	for (String i : myArray) {
+      System.out.println(i);
+    }  }
+}
+
+
+import java.util.Arrays;
+
+public class Main {
+  public static void main(String[] args) {
+    String myStr = "hello";
+    char[] myArray = myStr.toCharArray();
+    Arrays.sort(myArray);
+    System.out.println("Sorted Character Array: " + Arrays.toString(myArray));
+      
+  }
+}

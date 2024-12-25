@@ -1,0 +1,18 @@
+class Course{
+	private int courseId;
+	private String courseAdmin = "";
+	private String courseName="";
+	private int quiz ;
+	private int handson;;
+
+}
+
+class CourseProgram{
+	public static int findAvgOfQuizByAdmin(Course[] courses, String admin){
+	
+	}
+	
+	public static void main(String args[]){
+	
+	}
+}

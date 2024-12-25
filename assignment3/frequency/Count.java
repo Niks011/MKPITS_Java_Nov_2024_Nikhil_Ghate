@@ -5,7 +5,7 @@ class Frequency {
 	Scanner sc = new Scanner(System.in);
 	System.out.println("Enter the number of Elements");
 	int n = new sc.nextInt();
-	int arr[] = new int[n]
+	int arr[] = new int[n];
 
 	System.out.println("Enter the Elements");           // 2 4 6 8
 	for(int i=0; i<n-1; i++){

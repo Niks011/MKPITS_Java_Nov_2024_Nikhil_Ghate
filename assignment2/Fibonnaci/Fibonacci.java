@@ -18,8 +18,7 @@ class Fibo{
 	n--;
 	}while(n>0);
 	//System.out.println("Fibonacci Series is " + num);
-	}
-	
+	}	
 }
 
 class Fibonacci{

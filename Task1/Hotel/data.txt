@@ -1,0 +1,4 @@
+101,RamKrishn,15-Dec-2024,15,Yes,1150
+102,Vyankatesh,18-Dec-2024,9,No,9000
+103,Shrihari Hotel,10-Dec-2023,4,Yes,1200
+104,Hotel Grace Inn,16-Dec-2024,8,Yes,1100

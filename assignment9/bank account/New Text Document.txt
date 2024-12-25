@@ -1,0 +1,6 @@
+class InsufficientFundException extends Exception{
+	public String getMessage(){
+	return "programmed closed";
+	}
+	
+}

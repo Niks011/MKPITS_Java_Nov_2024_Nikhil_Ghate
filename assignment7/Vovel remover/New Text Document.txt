@@ -1,0 +1,32 @@
+public class RemoveVowels {
+    public static void main(String[] args) {6
+        String input = "Hello, Java Programming!";
+        
+        // Calling the method to remove vowels
+        String result = removeVowels(input);
+        
+        // Output the result
+        System.out.println("String after removing vowels: " + result);
+    }
+
+    public static String removeVowels(String str) {
+        // Create a StringBuffer to store the result
+        StringBuffer sb = new StringBuffer();
+        
+        // Convert the input string to lowercase for easy comparison (optional)
+        // Iterate over each character in the string
+        for (int i = 0; i < str.length(); i++) {
+            char c = str.charAt(i);
+            
+            // Check if the character is a vowel (both lowercase and uppercase)
+            if (!(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
+                  c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U')) {
+                // If not a vowel, append it to StringBuffer
+                sb.append(c);
+            }
+        }
+        
+        // Convert the StringBuffer back to a String and return the result
+        return sb.toString();
+    }
+}
